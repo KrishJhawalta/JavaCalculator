@@ -1,6 +1,18 @@
 class Functions{
-    void sum(int a, int b){
-        System.out.println("Sum is: " + (a+b));
+     double sum(int a, int b){
+        return a+b;
+    }
+
+    double sub(int a, int b){
+       return a-b;
+    }
+    
+    double multi(int a, int b){
+        return a*b;
+    }
+    
+    double divide(int a, int b){
+        return a/b;
     }}
 
 
