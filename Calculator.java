@@ -14,10 +14,14 @@ class Functions{
     }
     
     double divide(int a, int b){
-        return a/b;
-    }}
+        return (double)a/b;
+    }
 
-   class input extends Functions{
+    double modulus(int a, int b){
+        return (double)a%b;
+    }
+}
+   class input{
         int num1, num2;
         Scanner sc = new Scanner(System.in);
         
@@ -45,14 +49,17 @@ public class Calculator{
         
         
         // Cases 
-        while(option != 5){
-             // Display Options
+        while(option != 6){
+
+
+        // Display Options
         System.out.println("\nChoose Options: 1,2,3,4");
         System.out.println("1: Addition");
         System.out.println("2: Subtraction");
         System.out.println("3: Multiplication");
         System.out.println("4: Division");
-        System.out.println("5: Exit");
+        System.out.println("5: Modulus");
+        System.out.println("6: Exit");
 
         // Input Option
         System.out.print("Enter option: ");
@@ -81,6 +88,7 @@ public class Calculator{
                 System.out.println("Result is: "+ result);
                 break;
 
+
             case 4:
                 inp.getInput();
                 result = fn.divide(inp.num1, inp.num2);
@@ -88,7 +96,13 @@ public class Calculator{
                 break;
 
             case 5:
-                System.out.println("Exiting the program.");
+                inp.getInput();
+                result = fn.modulus(inp.num1, inp.num2);
+                System.out.println("Result is: "+ result);
+                break;
+
+            case 6:
+                System.out.println("Exiting...");
                 break;
 
             default:
