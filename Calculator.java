@@ -1,3 +1,4 @@
+// Java console calculator program
 import java.util.Scanner;
 
 // Operations class
