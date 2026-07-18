@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// Operations class
 class Functions{
      double sum(int a, int b){
         return a+b;
@@ -43,6 +44,9 @@ public class Calculator{
         Functions fn = new Functions();
         input inp = new input();
 
+
+        // Options 
+
         while(option != 6){
 
             System.out.println("\nChoose Options:");
@@ -59,6 +63,8 @@ public class Calculator{
             double result;
 
             switch(option){
+
+                // Cases
 
                 case 1:
                     inp.getInput(sc);
